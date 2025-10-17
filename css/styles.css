@@ -1,0 +1,66 @@
+*,
+*::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+    text-wrap: balance;
+} 
+
+p,
+li,
+figcaption {
+    max-width: 65ch;
+    text-wrap: pretty;
+}
+
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    display: flex;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+li {
+    list-style: none;
+}
+
+.left-section {
+    width: 35%;
+    background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+    text-align: center;
+}

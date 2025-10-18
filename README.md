@@ -85,9 +85,6 @@ All required `data-testid` attributes are present:
 
 ## Screenshots
 ![Desktop View](screenshots/desktop-screenshot.png)
-![Mobile 1 View](screenshots/mobile1-screenshot.png)
-![MObile 2 View](screenshots/mobile2-screenshot.png)
-
 
 ## Author
 

@@ -9,7 +9,9 @@
 h1, h2,
 h3, h4,
 h5, h6 {
-    text-wrap: balance;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-wrap: balance; 
 } 
 
 p,
@@ -17,6 +19,8 @@ li,
 figcaption {
     max-width: 65ch;
     text-wrap: pretty;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 img,
@@ -58,8 +62,14 @@ a {
     src: url(/assets/fonts/manrope-v20-latin-700.woff2);
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Manrope", serif;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .profile-card {
@@ -100,6 +110,8 @@ body {
 
 .profile-user-name {
     margin-bottom: 10px;
+    word-wrap: break-word;          
+    overflow-wrap: break-word;
 }
 
 .profile-user-time {
@@ -135,11 +147,14 @@ body {
     font-weight: 600;
     font-size: 1.3rem;
     margin-bottom: 13px;
+    word-wrap: break-word;          
+    overflow-wrap: break-word;
 }
 
 .profile-user-social-list {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .profile-user-social-item {
@@ -149,6 +164,17 @@ body {
     background: #E8E8EE;
     font-size: 0.7rem;
     transition: all 0.2s ease-in-out;
+}
+
+.profile-user-social-link:focus {
+    outline: 3px solid #6C52E0;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.profile-user-social-link:focus-visible {
+    outline: 3px solid #6C52E0;
+    outline-offset: 4px;
 }
 
 .profile-user-social-item:hover {
@@ -171,6 +197,8 @@ body {
     font-weight: 600;
     font-size: 1.3rem;
     margin-bottom: 10px;
+    word-wrap: break-word;          
+    overflow-wrap: break-word;
 }
 
 .dislikes-title {
@@ -180,6 +208,9 @@ body {
 .hobbies-list li,
 .dislikes-list li {
     font-size: 0.8rem;
+     max-width: 100%;                
+    word-wrap: break-word;          
+    overflow-wrap: break-word; 
 
 } 
 
@@ -244,6 +275,10 @@ body {
     .profile-user-bio {
         line-height: 1.5;
         font-size: 0.86rem;
+    }
+
+    .profile-user-social-list {
+        gap: 18px;
     }
 
     .profile-user-social-item {
@@ -325,29 +360,3 @@ body {
 
 }
 
-/* 
-
-
-
-
-
-
-
-
-
-
-
-
-.hobbies-list,
-.dislikes-list {
-    padding-left: 20px;
-    list-style-type: none;
-}
-
-.hobbies-list li,
-.dislikes-list li {
-    font-size: 0.86rem;
-
-} 
-
- */

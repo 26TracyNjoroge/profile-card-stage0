@@ -15,7 +15,7 @@
 </head>
 <body>
     <article data-testid="test-profile-card" class="profile-card">
-        <header class="profile-card-header">
+        <header class="profile-card-header" aria-label="Profile introduction">
             <figure class="profile-user-avatar-wrapper">
                 <img 
                     data-testid="test-user-avatar" 
@@ -25,7 +25,7 @@
                 />
             </figure>
             <h1 data-testid="test-user-name" class="profile-user-name">Tracy Njoroge</h1>
-            <div data-testid="test-user-time" class="profile-user-time">1760763250869 <span class="time-unit">ms</span></div>
+            <div data-testid="test-user-time" class="profile-user-time"><span id="time-value"></span> <span class="time-unit">ms</span></div>
         </header>
 
         <div class="profile-card-content">
@@ -56,7 +56,7 @@
                             data-testid="test-user-social-linkedin"
                             class="profile-user-social-link"
                         >
-                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-square-linkedin"></i>
                             LinkedIn
                         </a>
                     </li>

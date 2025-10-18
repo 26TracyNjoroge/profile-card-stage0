@@ -88,6 +88,6 @@ All required `data-testid` attributes are present:
 
 ## Author
 
-**Tracy Njoroge** — [GitHub](https://github.com/26TracyNjoroge) | [LinkedIn](https://www.linkedin.com/in/tracynjoroge/) | [Twitter](https://x.com/TracyNjoro90134)
+**Tracy Njoroge** - [GitHub](https://github.com/26TracyNjoroge) | [LinkedIn](https://www.linkedin.com/in/tracynjoroge/) | [Twitter](https://x.com/TracyNjoro90134)
 
 ---

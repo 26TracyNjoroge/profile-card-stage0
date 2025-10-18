@@ -106,6 +106,7 @@ body {
 
 .profile-user-avatar:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .profile-user-name {

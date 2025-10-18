@@ -42,25 +42,181 @@ a {
   color: inherit;
 }
 
-article {
-    max-width: 900px;
+@font-face {
+    font-display: swap;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    src: url(/assets/fonts/manrope-v20-latin-500.woff2);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/assets/fonts/manrope-v20-latin-700.woff2);
+}
+
+body {
+    font-family: "Manrope", serif;
+}
+
+.profile-card {
+    max-width: 880px;
     margin: 0 auto;
     border: 1px solid gray;
     display: flex;
+    border-radius: 12px;
+    margin-top: 90px;
 }
 
-img {
+.profile-card-header {
+    width: 280px;
+    background: linear-gradient(135deg, hsl(280 60% 65%), hsl(250 70% 60%));
+    text-align: center;
+    border-top-left-radius:12px;
+    border-bottom-left-radius: 12px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+.profile-user-avatar {
+    margin: auto;
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin-top: 60px;
+    margin-bottom: 12px;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    transition: transform 300ms;
 }
 
-li {
+.profile-user-avatar:hover {
+    transform: scale(1.05);
+}
+
+.profile-user-name {
+    margin-bottom: 12px;
+}
+
+.profile-user-time {
+    padding: 7px 5px 5px 5px;
+    border: 1px solid gray;
+    width: 150px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    font-size: 0.8rem;
+}
+
+.profile-card-content {
+    padding: 28px;
+}
+
+.profile-user-bio {
+    line-height: 1.4;
+    font-size: 0.88rem;
+    margin-bottom: 17px;
+    font-weight: 500;
+}
+
+.profile-user-social {
+    margin-bottom: 28px;
+}
+
+.social-title {
+    border-left: 4px solid;
+    border-image: linear-gradient(135deg, hsl(250, 70%, 60%), hsl(280, 60%, 65%)) 1;
+    padding-left: 8px;
+    padding-top: 5px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 13px;
+}
+
+.profile-user-social-list {
+    display: flex;
+    gap: 16px;
+}
+
+.profile-user-social-item {
     list-style: none;
+    padding: 7px;
+    border-radius: 8px;
+    background: #E8E8EE;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+
 }
 
-.left-section {
-    width: 35%;
-    background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
-    text-align: center;
+.profile-user-social-item:hover {
+    background: #6C52E0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.interests-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+} 
+
+.profile-user-hobbies,
+.profile-user-dislikes {
+    width: 45%;
+}
+
+.hobbies-title,
+.dislikes-title {
+    border-left: 4px solid;
+    border-image: linear-gradient(135deg, hsl(250, 70%, 60%), hsl(280, 60%, 65%)) 1;
+    border-radius: 20px;
+    padding-left: 8px;
+    padding-top: 5px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.dislikes-title {
+    border-image: linear-gradient(135deg, hsl(14, 79%, 55%), hwb(17 53% 10%)) 1;
+}
+
+.hobbies-list,
+.dislikes-list {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.hobbies-list li,
+.dislikes-list li {
+    /* margin-bottom: 2px; */
+    font-size: 0.86rem;
+
+} 
+
+.hobbies-list li::before,
+.dislikes-list li::before {
+  content: "•";
+  font-size: 1rem;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  /* vertical-align: middle; */
+}
+
+.hobbies-list li::before {
+  background: linear-gradient(135deg, hsl(250, 70%, 60%), hsl(280, 60%, 65%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dislikes-list li::before {
+  background: linear-gradient(130deg, hsl(14, 79%, 55%), hsl(17, 70%, 60%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

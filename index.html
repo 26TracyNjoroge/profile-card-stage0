@@ -6,52 +6,103 @@
     <meta name="description" content="Frontend developer profile card showcasing Tracy Njoroge's work. Built with semantic HTML, responsive CSS, and vanilla JavaScript. Accessible and mobile-friendly.">
     <title>Profile Card - Tracy Njoroge</title>
 
+    <link rel="preload" href="/assets/fonts/manrope-v20-latin-500.woff2" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/assets/fonts/manrope-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <article data-testid="test-profile-card">
-        <section class="left-section">
-            <img data-testid="test-profile-avatar" src="/assets/images/avatar.JPG" alt="Tracy Njroge Avatar"/>
-            <h1 data-testid="test-profile-name">Tracy Njoroge</h1>
-            <div data-testid="test-profile-time">Time in milliseconds</div>
-        </section>
+    <article data-testid="test-profile-card" class="profile-card">
+        <header class="profile-card-header">
+            <figure class="profile-user-avatar-wrapper">
+                <img 
+                    data-testid="test-user-avatar" 
+                    src="/assets/images/avatar.jpg" 
+                    alt="Tracy Njoroge profile picture" 
+                    class="profile-user-avatar"
+                />
+            </figure>
+            <h1 data-testid="test-user-name" class="profile-user-name">Tracy Njoroge</h1>
+            <div data-testid="test-user-time" class="profile-user-time">1760763250869 <span class="time-unit">ms</span></div>
+        </header>
 
-        <section>
-            <p data-testid="test-profile-bio">
-                A curious frontend developer from Nairobi, KENYA who loves learning and creating beautiful and acceccible web experiences with clean code and creativity. When I'm not coding, you'll find me exploring new technologies, Organizing spaces or planning my next adventure.
+        <div class="profile-card-content">
+            <p data-testid="test-user-bio" class="profile-user-bio">
+                A curious frontend developer from Nairobi, Kenya who loves learning and creating beautiful and accessible web experiences with clean code and creativity. When I'm not coding, you'll find me exploring new technologies, organizing spaces or planning my next adventure.
             </p>
-            <div>
-                <h2>Connect With Me</h2>
-                <ul data-testid="test-profile-socail-links">
-                    <li data-testid="test-user-social-github"><a href="https://github.com/26TracyNjoroge" target="_blank">Github</a></li>
-                    <li data-testid="test-user-social-linkedin"><a href="https://www.linkedin.com/in/tracynjoroge/" target="_blank">LinkedIn</a></li>
-                    <li data-testid="test-user-social-x"><a href="https://x.com/TracyNjoro90134" target="_blank">X</a></li>
-                </ul>
-            </div>
 
-            <div>
-                <h2>Hobbies</h2>
-                <ul data-testid="test-user-hobbies">
-                   <li>Watching Documentaries</li>
-                   <li>Organizing</li>
-                   <li>Travelling</li>
-                   <li>DIY or crafts</li>
-                   <li>Volunteering</li>
+            <nav data-testid="test-user-social-links" class="profile-user-social">
+                <h2 class="social-title">Connect With Me</h2>
+                <ul class="profile-user-social-list">
+                    <li class="profile-user-social-item">
+                        <a 
+                            href="https://github.com/26TracyNjoroge" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-github"
+                            class="profile-user-social-link"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+                    </li>
+                    <li class="profile-user-social-item">
+                        <a 
+                            href="https://www.linkedin.com/in/tracynjoroge/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-linkedin"
+                            class="profile-user-social-link"
+                        >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li class="profile-user-social-item">
+                        <a 
+                            href="https://x.com/TracyNjoro90134" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-x"
+                            class="profile-user-social-link"
+                        >
+                            <i class="fa-brands fa-x-twitter"></i>
+                            Twitter
+                        </a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
 
-            <div>
-                <h2>Dislikes</h2>
-                <ul data-testid="test-user-dislikes">
-                   <li>Poor communication</li>
-                   <li>Poor collaboration</li>
-                   <li>Dishonesty</li>
-                   <li>Closed-mindedness</li>
-                   <li>Disorganization</li>
-                </ul>
-            </div>
+            <div class="interests-container">
+                <section class="profile-user-hobbies">
+                    <h2 class="hobbies-title">Hobbies</h2>
+                    <ul data-testid="test-user-hobbies" class="hobbies-list">
+                        <li>Watching Documentaries</li>
+                        <li>Organizing</li>
+                        <li>Travelling</li>
+                        <li>DIY or crafts</li>
+                        <li>Volunteering</li>
+                    </ul>
+                </section>
+
+                <section class="profile-user-dislikes">
+                    <h2 class="dislikes-title">Dislikes</h2>
+                    <ul data-testid="test-user-dislikes" class="dislikes-list">
+                        <li>Poor communication</li>
+                        <li>Poor collaboration</li>
+                        <li>Dishonesty</li>
+                        <li>Closed-mindedness</li>
+                        <li>Disorganization</li>
+                    </ul>
+                </section>
             
-        </section>
+            </div>
+        
+        </div >
     </article>
+
+    <script src="/src/app.js"></script>
 </body>
 </html>

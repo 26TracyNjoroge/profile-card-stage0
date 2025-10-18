@@ -1,8 +1,10 @@
 # HNG Stage 0 - Profile Card Component
 A responsive and accessible profile card component built with HTML, CSS, and vanilla JavaScript for HNG13 Internship Stage 0.
 
-## Live Demo
-[View Live Site](https://profile-card-two-pearl.vercel.app/)
+### Links
+
+- GitHub Repository: [Repository](https://github.com/26TracyNjoroge/profile-card-stage0)
+- Live Site URL: [Live Demo](https://profile-card-two-pearl.vercel.app/)
 
 ## Features
 
@@ -14,7 +16,7 @@ A responsive and accessible profile card component built with HTML, CSS, and van
 - **Social Links**:Connected to GitHub, LinkedIn, and Twitter profiles.
 
 ## Project Structure
-
+```
 profile-card-stage0/
 ├── index.html          
 ├── css/
@@ -32,7 +34,7 @@ profile-card-stage0/
 |       ├── mobile1-screenshot.png
 │       └── mobile2-screenshot.png
 └── README.md           
-
+```
 
 ## Technologies Used
 
@@ -49,7 +51,6 @@ profile-card-stage0/
    git clone git@github.com:26TracyNjoroge/profile-card-stage0.git
 ```
 2. Open `index.html` in your browser
-   ```
 
 ## Testing & Validation
 
@@ -71,16 +72,16 @@ All required `data-testid` attributes are present:
 
 ### Manual Testing Checklist
 
-- [ ] **Page Load:** Avatar displays with default image on initial load  
-- [ ] **Avatar Upload:** Can click avatar and upload new image; displays immediately  
-- [ ] **Time Display:** Milliseconds update continuously and match Date.now()  
-- [ ] **Social Links:** All links open in new tabs
-- [ ] **Responsive Layout:** Layout adapts correctly at mobile, tablet, and desktop breakpoints  
-- [ ] **Keyboard Navigation:** All interactive elements are keyboard-focusable (Tab key)  
-- [ ] **Focus Styles:** Visible outline appears when focused on interactive elements  
-- [ ] **Hover Effects:** Avatar scaling and hover text (“Click to change avatar”) work  
-- [ ] **Alt Text:** Avatar has descriptive alt attribute  
-- [ ] **Accessibility:** Page works with screen readers; semantic markup present  
+- **Page Load:** Avatar displays with default image on initial load  
+- **Avatar Upload:** Can click avatar and upload new image; displays immediately  
+- **Time Display:** Milliseconds update continuously and match Date.now()  
+- **Social Links:** All links open in new tabs
+- **Responsive Layout:** Layout adapts correctly at mobile, tablet, and desktop breakpoints  
+- **Keyboard Navigation:** All interactive elements are keyboard-focusable (Tab key)  
+- **Focus Styles:** Visible outline appears when focused on interactive elements  
+- **Hover Effects:** Avatar scaling and hover text (“Click to change avatar”) work  
+- **Alt Text:** Avatar has descriptive alt attribute  
+- **Accessibility:** Page works with screen readers; semantic markup present  
 
 ## Screenshots
 ![Desktop View](screenshots/desktop-screenshot.png)

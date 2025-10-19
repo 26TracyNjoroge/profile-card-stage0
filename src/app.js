@@ -27,7 +27,6 @@ avatarImg.addEventListener("click", () => {
 });
 
 
-
 const updateMilliseconds = () => {
     const currentTimeMillis = Date.now();
     timeEl.textContent = currentTimeMillis;

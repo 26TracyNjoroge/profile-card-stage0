@@ -1,30 +1,31 @@
 const timeEl = document.querySelector("#time-value");
-const avatarImg = document.querySelector(".profile-user-avatar");
-const fileInput = document.createElement("input");
+const avatarImgEl = document.querySelector(".profile-user-avatar");
+const fileInputEl = document.createElement("input");
 
-fileInput.type = "file";
-fileInput.accept = "image/*";
+fileInputEl.type = "file";
+fileInputEl.accept = "image/*";
 
 const setAvatar = (source) => {
   if (typeof source === "string") {
 
-    avatarImg.src = source;
+    avatarImgEl.src = source;
   } else if (source instanceof File) {
     const blobUrl = URL.createObjectURL(source);
-    avatarImg.src = blobUrl;
+    avatarImgEl.src = blobUrl;
   }
-};
+}
 
-fileInput.addEventListener("change", (event) => {
-  const file = event.target.files[0];
-  if (file) {
-    setAvatar(file);
+fileInputEl.addEventListener("change", (event) => {
+  const selectedFile = event.target.files[0]
+
+  if (selectedFile) {
+    setAvatar(selectedFile);
   }
-});
+})
 
-avatarImg.addEventListener("click", () => {
-  fileInput.click();
-});
+avatarImgEl.addEventListener("click", () => {
+  fileInputEl.click();
+})
 
 
 const updateMilliseconds = () => {

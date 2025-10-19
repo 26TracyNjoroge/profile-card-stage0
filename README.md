@@ -30,9 +30,7 @@ profile-card-stage0/
 │       ├── manrope-v20-latin-500.woff2
 │       └── manrope-v20-latin-700.woff2
 ├── screenshots/ 
-|       ├── desktop-screenshot.png
-|       ├── mobile1-screenshot.png
-│       └── mobile2-screenshot.png
+│       └── desktop-screenshot.png
 └── README.md           
 ```
 
@@ -85,6 +83,12 @@ All required `data-testid` attributes are present:
 
 ## Screenshots
 ![Desktop View](screenshots/desktop-screenshot.png)
+
+## What I Learnt
+
+- Gained experience handling both file uploads and URLs, converting files to blob URLs for display.  
+- Improved accessibility by ensuring interactive elements are keyboard-focusable and have clear, visible focus outlines.
+
 
 ## Author
 

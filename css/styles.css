@@ -306,17 +306,17 @@ body {
 
 /* About Page */
 
-.about-page-container .back-link {
-    margin: 27px 0 27px 25px;
-    font-size: 1.05rem;
+.back-link {
+    margin-bottom: 30px;
+    font-size: 0.8rem;
     opacity: .65;
 }
 
-.about-page-container .back-link:hover {
+.back-link:hover {
     opacity: 1;
 }
 
-.about-page-wrapper {
+.about-page-container {
     width: 324px;
     margin: 0 auto;
     border: 1px solid gray;
@@ -326,6 +326,7 @@ body {
     font-size: 0.82rem;
     opacity: .8;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .about-section {
@@ -471,15 +472,15 @@ body {
 
     /* About Page */
 
-    .about-page-wrapper {
+    .about-page-container {
         width: 680px;
         padding-right: 0;
         font-size: 0.89rem;
         line-height: 1.5;
     }
 
-    .about-page-container .back-link {
-        margin: 30px 0 30px 58px;
+    .back-link {
+        font-size: 0.94rem;
     }
 
     .confidence-heading {
@@ -554,7 +555,8 @@ body {
 
     /* About Page */
 
-    .about-page-wrapper {
+
+    .about-page-container {
         width: 880px;
         font-size: 0.91rem;
         line-height: 1.6;

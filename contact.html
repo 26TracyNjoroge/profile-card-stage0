@@ -7,19 +7,82 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="/css/styles.css" />
+
 </head>
 <body>
-    <p>
-        <a href="/">
-            <i class="fa-solid fa-arrow-left"></i>
-            Back to profile
-        </a>
-    </p>
-    <main>
-        <form>
-            <h3>Fill the form below and we'll get in touch with you.</h3>
-            <label for="" class="">Full Name</label>
-            <input type="text" placeholder="Tracy Chapman" id="">
+    <main class="contact-page-container">
+        <p class="back-link">
+            <a href="/" class="Back to Home Page">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to profile
+            </a>
+        </p>
+    
+        <form class="contact-page-form">
+            <h1 class="contact-page-heading">Contact Me</h1>
+            <p class="contact-page-detail">
+                Fill the form below and we'll get in touch with you.
+            </p>
+            
+            <div class="form-group">
+                <label for="fullName" class="contact-label">Full Name</label>
+                <input 
+                    type="text" 
+                    id="fullName" 
+                    name="fullName" 
+                    placeholder="Tracy Chapman"
+                    data-testid="test-contact-name"
+                    class="contact-page-input"
+                >
+                <p class="error-message" data-testid="test-contact-error-name">
+                    Please enter your full name
+                </p>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="contact-label">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="tracy@gmail.com" 
+                    data-testid="test-contact-email"
+                    class="contact-page-input"
+                >
+                <p class="error-message" data-testid="test-contact-error-email">
+                    Please enter a valid email address
+                </p>
+            </div>
+
+            <div class="form-group">
+                <label for="subject" class="contact-label">Subject</label>
+                <input 
+                    type="text" 
+                    id="subject" 
+                    name="subject" 
+                    placeholder="How can I help you?"
+                    data-testid="test-contact-subject"
+                    class="contact-page-input"
+                >
+                <p class="error-message" data-testid="test-contact-error-subject">Please enter a subject</p>
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="contact-label">Message</label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    placeholder="Tell me more about your inquiry..." 
+                    rows="4" 
+                    cols="50"
+                    data-testid="test-contact-message"
+                    class="contact-page-input contact-textarea"
+                ></textarea>
+                <p class="error-message" data-testid="test-contact-error-message">Please enter your message</p>
+            </div>
+            
+            <button type="submit" data-testid="test-contact-submit" class="contact-form-submit">Submit</button>
         </form>
     </main>
 </body>

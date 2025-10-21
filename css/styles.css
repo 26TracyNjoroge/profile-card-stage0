@@ -94,10 +94,6 @@ body {
     font-size: 0.84rem;
 }
 
-.profile-user-avatar-wrapper {
-    /* margin-bottom: 20px; */
-}
-
 .avatar-upload {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -155,16 +151,54 @@ body {
 .profile-user-bio {
     line-height: 1.5;
     font-size: 0.82rem;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     font-weight: 500;
 }
 
+.profile-info-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.profile-info-link-item {
+    list-style-type: none;
+    padding: 6px 9px;
+    border-radius: 8px;
+    border: 1px solid rgb(211, 207, 207);
+    background: #f1f1f4;
+    font-size: 0.73rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-info-link:focus {
+    outline: 1px solid #B56FDB;
+    outline-offset: 6px;
+    border-radius: 4px;
+}
+
+.profile-info-link:focus-visible {
+    outline: 3px solid #B56FDB;
+    outline-offset: 6px;
+}
+
+.profile-info-link-item:hover {
+    cursor: pointer;
+    background: #B56FDB;
+    border-color: #B56FDB;
+    color: white;
+}
+
+.fa-solid {
+    margin-right: 5px;
+}
+
 .profile-user-social {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .social-title {
-     border-left: 4px solid;
+    border-left: 4px solid;
     border-image: linear-gradient(135deg, hsl(250, 70%, 60%), hsl(280, 60%, 65%)) 1;
     padding-left: 8px;
     font-weight: 600;
@@ -361,10 +395,23 @@ body {
     .profile-user-bio {
         font-size: 0.9rem;
         line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .profile-info-links {
+        margin-bottom: 28px;
+    }
+
+    .profile-info-link-item {
+        font-size: 0.85rem;
     }
 
     .social-title {
         font-size: 1.4rem;
+    }
+
+    .profile-user-social {
+        margin-bottom: 32px;
     }
 
     .profile-user-social-item {

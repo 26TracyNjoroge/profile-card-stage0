@@ -249,7 +249,6 @@ body {
 .dislikes-title {
     border-left: 4px solid;
     border-image: linear-gradient(135deg, hsl(250, 70%, 60%), hsl(280, 60%, 65%)) 1;
-    border-radius: 20px;
     padding-left: 8px;
     font-weight: 600;
     font-size: 1.3rem;
@@ -265,7 +264,7 @@ body {
 .hobbies-list li,
 .dislikes-list li {
     font-size: 0.8rem;
-     max-width: 100%;                
+    max-width: 100%;                
     word-wrap: break-word;          
     overflow-wrap: break-word; 
 
@@ -303,6 +302,109 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+/* About Page */
+
+.about-page-container .back-link {
+    margin: 27px 0 27px 25px;
+    font-size: 1.05rem;
+    opacity: .65;
+}
+
+.about-page-container .back-link:hover {
+    opacity: 1;
+}
+
+.about-page-wrapper {
+    width: 324px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 12PX;
+    background-color: hsl(250, 30%, 97%);
+    padding: 26px;
+    font-size: 0.82rem;
+    opacity: .8;
+    margin-bottom: 50px;
+}
+
+.about-section {
+    margin-bottom: 40px;
+    margin-right: 18px;
+}
+
+.about-heading {
+    border-left: 4px solid;
+    border-color: #B56FDB;
+    padding-left: 9px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 13px;
+    word-wrap: break-word;          
+    overflow-wrap: break-word;
+}
+
+.about-bio-content,
+.about-goals-list,
+.about-confidence-list,
+.about-future-note-content {
+    margin-bottom: 18px;
+    max-width: 98%;
+    word-wrap: break-word;          
+    overflow-wrap: break-word; 
+}
+
+.about-extra-content {
+    max-width: 95%;
+}
+
+.about-confidence-list li,
+.about-goals-list li,
+.confidence-detail {
+    max-width: 98%;
+}
+
+.about-goals-list {
+    padding-left: 22px;
+}
+
+.about-goals-list li {
+    margin-bottom: 6px;
+}
+
+.about-confidence-list {
+    list-style: none;
+}
+
+.about-confidence-list li {
+    background-color: #F6F6F8;
+    padding: 9px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.confidence-detail {
+    font-size: 0.75rem;
+}
+
+.confidence-heading {
+    font-size: 0.88rem;
+    margin-bottom: 3px;
+}
+
+.about-future-note-content {
+    background-color: #F6F6F8;
+    padding: 9px 9px 9px 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    background-color: #B56FDB;
+    color: white;
+    opacity: 1;
+}
+
 
 @media (min-width: 768px) {
     .profile-card {
@@ -367,6 +469,28 @@ body {
         font-size: 0.83rem;
     } 
 
+    /* About Page */
+
+    .about-page-wrapper {
+        width: 680px;
+        padding-right: 0;
+        font-size: 0.89rem;
+        line-height: 1.5;
+    }
+
+    .about-page-container .back-link {
+        margin: 30px 0 30px 58px;
+    }
+
+    .confidence-heading {
+        font-size: 0.90rem;
+    }
+
+    .confidence-detail {
+        font-size: 0.79rem;
+    }
+
+
 }
 
 @media (min-width: 1024px) {
@@ -428,5 +552,24 @@ body {
         font-size: 0.89rem;
     } 
 
+    /* About Page */
+
+    .about-page-wrapper {
+        width: 880px;
+        font-size: 0.91rem;
+        line-height: 1.6;
+    }
+
+    .confidence-heading {
+        font-size: 0.93rem;
+    }
+
+    .confidence-detail {
+        font-size: 0.82rem;
+    }
+
+    .about-heading {
+        font-size: 1.4rem;
+    }
 }
 

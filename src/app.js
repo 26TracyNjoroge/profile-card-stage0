@@ -37,5 +37,3 @@ const updateMilliseconds = () => {
 
 setAvatar("/assets/images/avatar.jpg");
 updateMilliseconds();
-
-

@@ -19,7 +19,7 @@
             </a>
         </p>
     
-        <form class="contact-page-form">
+        <form class="contact-page-form" id="form">
             <h1 class="contact-page-heading">Contact Me</h1>
             <p class="contact-page-detail">
                 Fill the form below and we'll get in touch with you.
@@ -33,9 +33,9 @@
                     name="fullName" 
                     placeholder="Tracy Chapman"
                     data-testid="test-contact-name"
-                    class="contact-page-input"
+                    class="contact-page-input error-col"
                 >
-                <p class="error-message hidden" data-testid="test-contact-error-name">
+                <p class="error-message-name error-message hidden" data-testid="test-contact-error-name">
                     Please enter your full name
                 </p>
             </div>
@@ -48,9 +48,9 @@
                     name="email" 
                     placeholder="tracy@gmail.com" 
                     data-testid="test-contact-email"
-                    class="contact-page-input"
+                    class="contact-page-input error-col"
                 >
-                <p class="error-message hidden" data-testid="test-contact-error-email">
+                <p class="error-message-email error-message hidden" data-testid="test-contact-error-email">
                     Please enter a valid email address
                 </p>
             </div>
@@ -63,9 +63,9 @@
                     name="subject" 
                     placeholder="How can I help you?"
                     data-testid="test-contact-subject"
-                    class="contact-page-input"
+                    class="contact-page-input error-col"
                 >
-                <p class="error-message hidden" data-testid="test-contact-error-subject">Please enter a subject</p>
+                <p class="error-message-subject error-message hidden" data-testid="test-contact-error-subject">Please enter a subject</p>
             </div>
 
             <div class="form-group">
@@ -77,12 +77,12 @@
                     rows="4" 
                     cols="50"
                     data-testid="test-contact-message"
-                    class="contact-page-input contact-textarea"
+                    class="contact-page-input error-col contact-textarea"
                 ></textarea>
-                <p class="error-message hidden" data-testid="test-contact-error-message">Please enter your message</p>
+                <p class="error-message-message error-message hidden" data-testid="test-contact-error-message">Please enter your message</p>
             </div>
             
-            <button type="submit" data-testid="test-contact-submit" class="contact-form-submit">Submit</button>
+            <button type="submit" data-testid="test-contact-submit" id="submit" class="contact-form-submit">Submit</button>
         </form>
 
         <div class="thank-you hidden">
@@ -93,5 +93,7 @@
             </p>
         </div>
     </main>
+
+    <script src="/src/form.js"></script>
 </body>
 </html>

@@ -35,7 +35,7 @@
                     data-testid="test-contact-name"
                     class="contact-page-input"
                 >
-                <p class="error-message" data-testid="test-contact-error-name">
+                <p class="error-message hidden" data-testid="test-contact-error-name">
                     Please enter your full name
                 </p>
             </div>
@@ -50,7 +50,7 @@
                     data-testid="test-contact-email"
                     class="contact-page-input"
                 >
-                <p class="error-message" data-testid="test-contact-error-email">
+                <p class="error-message hidden" data-testid="test-contact-error-email">
                     Please enter a valid email address
                 </p>
             </div>
@@ -65,7 +65,7 @@
                     data-testid="test-contact-subject"
                     class="contact-page-input"
                 >
-                <p class="error-message" data-testid="test-contact-error-subject">Please enter a subject</p>
+                <p class="error-message hidden" data-testid="test-contact-error-subject">Please enter a subject</p>
             </div>
 
             <div class="form-group">
@@ -79,11 +79,19 @@
                     data-testid="test-contact-message"
                     class="contact-page-input contact-textarea"
                 ></textarea>
-                <p class="error-message" data-testid="test-contact-error-message">Please enter your message</p>
+                <p class="error-message hidden" data-testid="test-contact-error-message">Please enter your message</p>
             </div>
             
             <button type="submit" data-testid="test-contact-submit" class="contact-form-submit">Submit</button>
         </form>
+
+        <div class="thank-you hidden">
+            <p class="thank-you-content">
+                <span class="thank-you-heading">Message sent successfully!</span>
+                <br/>
+                I'll get back to you as soon as possible.
+            </p>
+        </div>
     </main>
 </body>
 </html>

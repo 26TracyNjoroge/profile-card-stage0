@@ -122,7 +122,6 @@ All required `data-testid` attributes are present:
 ![Contact Page Desktop View](screenshots/contact-page-desktop.png)
 
 ## What I Learnt
-
 - Gained experience handling both file uploads and URLs, converting files to blob URLs for display.  
 - Improved accessibility by ensuring interactive elements are keyboard-focusable and have clear, visible focus outlines.
 - Creating accessible forms with labels, error messages, and ARIA attributes.

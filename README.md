@@ -1,5 +1,5 @@
 # HNG Stage 0 and Stage 1 - Profile Card Component
-A responsive and accessible multiple-page profile web application built with HTML, CSS, and vanilla JavaScript for HNG13 Internship Stage 0 and stage 1.
+A responsive and accessible multi-page profile web application created with HTML, CSS, and vanilla JavaScript for the HNG13 Internship (Stage 0 & 1). Each page follows semantic HTML standards, supports keyboard navigation for improved accessibility, and adapts seamlessly across mobile, tablet, and desktop devices.
 
 ### Links
 

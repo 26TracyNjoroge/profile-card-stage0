@@ -12,12 +12,12 @@
 </head>
 <body>
     <main class="contact-page-container">
-        <p class="back">
+        <nav class="back">
             <a href="/" title="Back to Home Page" class="back-link">
-                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                 Back to profile
             </a>
-        </p>
+        </nav>
     
         <form class="contact-page-form" id="form">
             <h1 class="contact-page-heading">Contact Me</h1>
@@ -34,8 +34,14 @@
                     placeholder="Tracy Chapman"
                     data-testid="test-contact-name"
                     class="contact-page-input error-col"
+                    aria-describedby="error-name"
                 >
-                <p class="error-message-name error-message hidden" data-testid="test-contact-error-name">
+                <p 
+                    class="error-message-name error-message hidden" 
+                    data-testid="test-contact-error-name"
+                    id="error-name"
+                    role="alert"
+                >
                     Please enter your full name
                 </p>
             </div>
@@ -49,8 +55,14 @@
                     placeholder="tracy@gmail.com" 
                     data-testid="test-contact-email"
                     class="contact-page-input error-col"
+                    aria-describedby="error-email"
                 >
-                <p class="error-message-email error-message hidden" data-testid="test-contact-error-email">
+                <p 
+                    class="error-message-email error-message hidden" 
+                    data-testid="test-contact-error-email"
+                    id="error-email"
+                    role="alert"
+                >
                     Please enter a valid email address
                 </p>
             </div>
@@ -64,8 +76,16 @@
                     placeholder="How can I help you?"
                     data-testid="test-contact-subject"
                     class="contact-page-input error-col"
+                    aria-describedby="error-subject"
                 >
-                <p class="error-message-subject error-message hidden" data-testid="test-contact-error-subject">Please enter a subject</p>
+                <p 
+                    class="error-message-subject error-message hidden" 
+                    data-testid="test-contact-error-subject"
+                    id="error-subject"
+                    role="alert"
+                >
+                    Please enter a subject
+                </p>
             </div>
 
             <div class="form-group">
@@ -78,8 +98,16 @@
                     cols="50"
                     data-testid="test-contact-message"
                     class="contact-page-input error-col contact-textarea"
+                    aria-describedby="error-message"
                 ></textarea>
-                <p class="error-message-message error-message hidden" data-testid="test-contact-error-message">Please enter your message</p>
+                <p 
+                    class="error-message-message error-message hidden" 
+                    data-testid="test-contact-error-message"
+                    id="error-message"
+                    role="alert"
+                >
+                    Please enter your message
+                </p>
             </div>
             
             <button type="submit" data-testid="test-contact-submit" id="submit" class="contact-form-submit">Submit</button>
